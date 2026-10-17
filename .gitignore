@@ -1,0 +1,16 @@
+# local credentials and run artefacts
+config.json
+state.json
+last-run.json
+*.local.json
+results*.json
+
+# generated backups / temp files
+Script.js.bak-*
+Script.js.tmp
+*.tmp
+
+# python
+__pycache__/
+*.py[cod]
+.venv/

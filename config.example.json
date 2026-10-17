@@ -1,0 +1,38 @@
+{
+  "mihomo_socket": "/var/run/clash-verge-service/users/501/verge-mihomo.sock",
+  "mihomo_url": null,
+  "mihomo_secret": "set-your-secret",
+  "clash_proxy": "http://127.0.0.1:7897",
+  "script_path": "~/Library/Application Support/io.github.clash-verge-rev.clash-verge-rev/profiles/Script.js",
+  "profiles_yaml": "~/Library/Application Support/io.github.clash-verge-rev.clash-verge-rev/profiles.yaml",
+  "profile_name": null,
+  "upstream_group": "Webshare · 上游",
+  "antigravity_group": "Antigravity · Residential Chain",
+  "residential_proxy": "Webshare · Static Residential",
+  "legacy_groups": ["Webshare · 上游(美国)"],
+  "webshare": {
+    "server": "YOUR-WEBSHARE-ENDPOINT",
+    "port": 7208,
+    "username": "YOUR-WEBSHARE-USERNAME",
+    "password": "YOUR-WEBSHARE-PASSWORD"
+  },
+  "probe_url": "https://generativelanguage.googleapis.com/v1beta/models",
+  "success_status": [200, 401, 403, 404],
+  "timeout": 10.0,
+  "settle": 0.4,
+  "attempts": 2,
+  "exclude_patterns": [
+    "剩余流量",
+    "距离下次重置",
+    "套餐到期",
+    "官网",
+    "客户端",
+    "无法使用",
+    "去广告",
+    "^若"
+  ],
+  "quit_cmd": "osascript -e 'quit app \"Clash Verge\"'",
+  "start_cmd": "open -a \"Clash Verge\"",
+  "process_pattern": "/Applications/Clash Verge.app/Contents/MacOS/clash-verge",
+  "restart_timeout": 120
+}
