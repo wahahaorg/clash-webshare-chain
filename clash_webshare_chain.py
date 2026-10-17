@@ -618,6 +618,8 @@ def cmd_run(args, cfg, path):
 
 
 def main() -> None:
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(line_buffering=True)
     parser = argparse.ArgumentParser(
         description="Probe Clash Verge exits through a Webshare chain and regenerate Script.js."
     )
